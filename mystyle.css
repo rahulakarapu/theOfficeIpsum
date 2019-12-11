@@ -3,6 +3,9 @@
     src:  url('AmericanTypewriterRegular.ttf');
 }
 
+body {
+    margin: 0;
+}
 
 header {
     height: 10vh;
@@ -20,12 +23,16 @@ footer {
 h1 {
     font-family: 'AmericanTypewriterRegular';
     text-align: center;
+    padding: 2rem;
+    margin: 0;
 }
 
 .form {
+    max-height: 20vh;
     margin-left: 30vw;
     margin-right: 30vw;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     padding: 10px;
     border: 1px solid;
     box-shadow: 0.5rem 0.5rem;
@@ -59,6 +66,21 @@ h1 {
     align-items: center;
     flex-direction: column;
     font-family: 'AmericanTypewriterRegular';
+}
+
+.textContainer {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    max-height: 45vh;
+    font-family: 'AmericanTypewriterRegular';
+    border: 1px solid;
+    min-height: 5rem;
+    border-radius: 4px;
+    overflow: auto;
+}
+
+#fillerText {
+    overflow: scroll;
 }
 
 .quoteContainer {

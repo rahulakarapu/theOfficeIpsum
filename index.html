@@ -11,6 +11,7 @@
 
         <link rel="stylesheet" type="text/css" href="mystyle.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     </head>
     <body>
 
@@ -19,33 +20,37 @@
         </header>
 
         <main>
-            <form class="form">
+            <form id="form" class="form">
                 <label>Enter the number of sentences:</label><br />
-                <input type="text" >
-                <button type="submit" id="submit">Brrrrrrrr! Drum roll</button>
+                <input id="sentenceCount" type="text" >
+                <button type="submit" id="submit" onClick="getFillerText()">Brrrrrrrr! Drum roll</button>
             </form>
 
             <div class="textContainer">
+                <div id="fillerText">
 
+                </div>
             </div>
         </main>
 
         <footer class="footerContainer">
             <div class="quoteContainer">
-                <p>"You miss 100% of the shots you don't take"</p>
+                <p>"You miss 100% of the shots you don't take."</p>
                 <p>- Wayne Gretzky</p>
                 <p>- Micheal Scott</p>
-                <p>-Rahul</p>
+                <p>- Rahul</p>
             </div>
             <div>
-                <a class="btn btn-default ln" href="www.linkedin.com">
+                <a class="btn btn-default ln" href="https://www.linkedin.com/in/rahul-akarapu-aa76a087/" target="_blank">
                     <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                 </a>
-                <a class="btn btn-default" href="www.linkedin.com">
+                <a class="btn btn-default" href="https://github.com/rahulperfect06" target="_blank">
                     <i class="fa fa-github" aria-hidden="true"></i>
                 </a>
             </div>
         </footer>
+
+        <script src="./theOnly.js"></script>
 
     </body>
 </html>
