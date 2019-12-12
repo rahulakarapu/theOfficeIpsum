@@ -29,8 +29,8 @@ h1 {
 
 .form {
     max-height: 20vh;
-    margin-left: 30vw;
-    margin-right: 30vw;
+    margin-left: 25vw;
+    margin-right: 25vw;
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding: 10px;
@@ -100,4 +100,15 @@ h1 {
 
 .ln {
     margin-right: 2rem;
+}
+
+@media all and (min-width:0px) and (max-width: 480px) {
+    .form {
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+
+    .form > input  {
+        width: 40%;
+    }
 }
